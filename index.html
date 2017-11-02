@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Train Scheduler</title>
+  <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous">    
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/locale/af.js"></script>
+
+	<script type="text/javascript" src="assets/javascript/javascript.js"></script>
+</head>
+<body>
+	<section id="container">
+	<section class="header-jumbo">
+		<div id="background-header" class="jumbotron jumbotron-fluid">
+  			<div  class="container">
+   				<h1 class="display-3">Anytime is Train Time</h1>
+   				 <p class="lead">Choo Choo. Chee Chee.</p>
+  			</div>
+			</div>
+	</section>	
+
+
+
+	<section id="addTrainTable">
+	<div class="section-banner">Current Train Schedule</div>
+	<table id="inputTable" class="table">
+  <thead>
+    <tr>
+      <th>Train Name</th>
+      <th>Destination</th>
+      <th>Frequency (min)</th>
+      <th>Next Arrival</th>
+      <th>Minutes Away</th>
+    </tr>
+  </thead>
+  <tbody id="tableBody">
+    
+  </tbody>
+</table>
+	</section>
+
+
+	<section id="formSubmit">
+		<div class="section-banner">Add Train</div>
+		<form id="inputContent">
+  			<div class="form-group">
+   				<label class="col-form-label" for="formGroupExampleInput">Train Name</label>
+
+    			<input type="text" class="form-control" id="nameInput" placeholder="Example input">
+  			</div>
+  			<div class="form-group">
+    			<label class="col-form-label" for="formGroupExampleInput2">Destination</label>
+   			 	<input type="text" class="form-control" id="destinationInput" placeholder="Another input">
+  			</div>
+  			<div class="form-group">
+   				<label class="col-form-label" for="formGroupExampleInput">First Train Time (HH:mm - military time)</label>
+    			<input type="text" class="form-control" id="startTimeInput" placeholder="Example input">
+  			</div>
+  			<div class="form-group">
+    			<label class="col-form-label" for="formGroupExampleInput2">Frequency (min)</label>
+   			 	<input type="text" class="form-control" id="frequencyInput" placeholder="Another input">
+
+  			</div>
+  		<button id="submit" class="btn btn-primary" type="submit">Button</button>
+</form>
+	</section>
+
+
+	
+
+</section>
+		
+</body>
+</html>

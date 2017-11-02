@@ -1,0 +1,54 @@
+.header-jumbo{
+	background-color: black;
+	color: #fff;
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+#background-header{
+	background-color: black;
+}
+#container{
+	width:70%;
+	margin:auto;
+}
+
+#formSumbit{
+	border-style: solid;
+	border-width: 5px;
+	border-color:blue;
+}
+
+.table-header{
+	text-align: center;
+	margin:auto;
+}
+
+#employee-entry{
+	margin-bottom: 25px;
+	margin:auto;
+}
+
+.section-banner{
+	background-color: #122f6d;
+	color: #fff;
+	padding:5px;
+
+}
+
+#submit{
+	background-color: #122f6d;
+	border: none;
+}
+
+#addEmployeeTable, #formSubmit{
+	border-style: solid;
+	border-width: 2px;
+	border-color: #122f6d;
+	margin-bottom: 25px;
+	border-radius: 5px;
+}
+
+#inputContent, #inpuTable{
+	padding: 10px;
+}
